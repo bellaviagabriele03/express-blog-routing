@@ -6,6 +6,9 @@ const rounter = express.Router();
 
 
 //INDEX 
+rounter.get("/", (req, res) => {
+    res.json(posts)
+})
 
 //SHOW 
 
@@ -16,3 +19,7 @@ const rounter = express.Router();
 //MODIFY
 
 //DESTROY 
+
+
+
+export default rounter;
